@@ -1,17 +1,17 @@
 <template>
   <v-app>
     <div class="layout-container">
-      <v-card class="mx-auto rounded-xl" flat width="100%" height="100%">
+      <v-card class="mx-auto card-container pa-6" elevation="10" width="100%" height="100%">
         <v-layout>
-          <v-app-bar color="transparent">
+          <v-app-bar color="transparent" flat>
             <template v-slot:prepend>
               <v-app-bar-nav-icon></v-app-bar-nav-icon>
             </template>
-
-            <v-app-bar-title>Photos</v-app-bar-title>
+            
+            <v-app-bar-title v-if="false" class="d-flex justify-center font-weight-black">I'm a Software Developer</v-app-bar-title>
 
             <template v-slot:append>
-              <v-btn icon="mdi-dots-vertical"></v-btn>
+              <v-btn icon="mdi-menu-down"></v-btn>
             </template>
           </v-app-bar>
 
@@ -27,32 +27,7 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
-$warm-flame: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-$night-fade: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-$spring-warmth: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-$sunny-morning: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-$dusty-grass: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-$morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-$near-moon: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-$strong-bliss: linear-gradient(
-  to right,
-  #f78ca0 0%,
-  #f9748f 19%,
-  #fd868c 60%,
-  #fe9a8b 100%
-);
-$growing-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-$premium-dark: linear-gradient(to right, #434343 0%, black 100%);
-$eternal-contance: linear-gradient(to top, #09203f 0%, #537895 100%);
-$crystalline: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
-$party-bliss: linear-gradient(to top, #4481eb 0%, #04befe 100%);
-$dense-water: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
-$colorful-peach: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
-$african-field: linear-gradient(-45deg, #ffc796 0%, #ff6b95 100%);
-
 .layout-container {
-  padding: 10rem 16rem 10rem 16rem;
-  height: 100%;
-  background: $warm-flame;
+  @include water_design;
 }
 </style>

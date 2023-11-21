@@ -1,8 +1,6 @@
 <template>
     <div>
-        <v-btn>
-            test button
-        </v-btn>
+        This is Card
     </div>
 </template>
 

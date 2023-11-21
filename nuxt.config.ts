@@ -8,9 +8,22 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+
+  components: [
+    '~/components',
+    { path: '~/components/atoms', prefix: 'a-' },
+  ],
+
   vite: {
     define: {
       "process.env.DEBUG": false,
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/scss/_index.scss" as *;'
+        }
+      }
+    }
   },
 });

@@ -1,13 +1,11 @@
 <template>
-  <div class="pa-6">
-    index page
+  <div>
+    <a-base-button />
+    <a-card-call-card />
   </div>
 </template>
 
 <script setup lang="ts">
-
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
