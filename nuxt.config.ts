@@ -11,7 +11,9 @@ export default defineNuxtConfig({
 
   components: [
     '~/components',
-    { path: '~/components/atoms', prefix: 'a-' },
+    { path: '~/components/dp-v1', prefix: 'v1-' },
+    { path: '~/components/dp-v2', prefix: 'v2-' },
+    { path: '~/components/templates', prefix: 't-' },
   ],
 
   vite: {

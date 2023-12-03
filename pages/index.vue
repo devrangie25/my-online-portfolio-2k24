@@ -1,7 +1,6 @@
 <template>
   <div>
-    <a-base-button />
-    <a-card-call-card />
+    Index Page
   </div>
 </template>
 
